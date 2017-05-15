@@ -7,6 +7,10 @@ personForm.onsubmit = (ev) => {
 
     const personName = form.personName.value
 
-    details.textContent = `<em>${personName}</em>`
+    // details.textContent = `<em>${personName}</em>`
+
+    const em = document.createElement('em')
+    em.textContent = personName
+    details.appendChild(em)
 
 }

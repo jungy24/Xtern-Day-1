@@ -7,6 +7,6 @@ personForm.onsubmit = (ev) => {
 
     const personName = form.personName.value
 
-    details.textContent = personName
-    
+    details.textContent = '<em>${personName}</em>'
+
 }
